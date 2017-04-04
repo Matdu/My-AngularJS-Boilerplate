@@ -1,4 +1,4 @@
-##About
+## About
 
 This project was made for personal purposes, it's entirelly(almost fully) based on [jbtuko's](https://github.com/jbutko/) - [AngularJS Boilerplate](https://github.com/jbutko/AngularJS-Boilerplate). With a few changes to suit my needs, or desires.
 
