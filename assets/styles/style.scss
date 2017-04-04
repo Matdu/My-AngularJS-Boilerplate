@@ -1,0 +1,50 @@
+/******************************************************************
+
+Import de todos os CSS
+
+******************************************************************/
+
+// Sass variables
+@import "partials/variables";
+
+// typography
+@import "partials/typography";
+
+/*********************
+IMPORT DE MÓDULOS
+*********************/
+
+//import bootstrap
+@import "modules/bootstrap-custom";
+
+/*********************
+STYLE DESKTOP
+*********************/
+@media only screen and (min-width: 1030px) {
+
+	// styles in 1030up.scss
+	@import "breakpoints/1030up";
+
+} // end of media query
+
+/*********************
+RETINA (2x A RESOLUÇÃO DE DISPOSITIVOS)
+*********************/
+// @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+//        only screen and (min--moz-device-pixel-ratio: 1.5),
+//        only screen and (min-device-pixel-ratio: 1.5) {
+
+// 	// styles in 2x.scss
+// 	@import "breakpoints/2x";
+
+// } // end of media query
+
+/*********************
+ESTILO PARA IMPRESSÃO
+*********************/
+@media print {
+
+	// styles in print.scss
+	@import "partials/print";
+
+}

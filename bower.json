@@ -1,0 +1,28 @@
+{
+  "name": "AngularBoilerplate",
+  "version": "1.0.0",
+  "authors": [
+    "Matheus Alves <matduu44@gmail.com.br>"
+  ],
+  "description": "A simple yet usefull Angular Boilerplate that suits my needs",
+  "main": "app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.13",
+    "angular-route": "~1.3.13",
+    "angular-sanitize": "~1.3.13",
+    "angular-input-masks": "^2.5.0",
+    "font-awesome": "^4.7.0",
+    "sweetalert2": "^6.4.2",
+    "angular-sweetalert-2": "^2.0.0",
+    "satellizer": "^0.15.5",
+    "angular-animate": "^1.6.3",
+    "bootstrap": "^3.3.7"
+  }
+}

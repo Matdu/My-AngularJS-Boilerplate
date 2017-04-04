@@ -1,0 +1,117 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="pt-br" ng-csp="" ng-app="myBoilerplate">
+<!--<![endif]-->
+
+<head>
+
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Boilerplate</title>
+    <meta name="description" content="">
+
+    <!-- mobile meta -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--[if IE]>
+			<link rel="shortcut icon" href="favicon.ico">
+			<![endif]-->
+    <!-- ou, seta /favicon.ico para win IE10 -->
+    <meta name="msapplication-TileColor" content="#fff">
+
+    <!-- CSS -->
+    <!-- build:css assets/css/style.min.css -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link href="assets/styles/fonts/material-icons.css" rel="stylesheet">
+    <link href="assets/styles/fonts/allura.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/sweetalert2/dist/sweetalert2.min.css" />
+    <!-- endbuild -->
+
+</head>
+
+<!-- Loading Wrapper -->
+<body class="main-wrapper">
+    <div class="loading-overlay" ng-if="showLoading">
+        <div class="logo-overlay">
+            <img class="rotate-logo" src="" alt="">
+        </div>
+    </div>
+
+    <!--[if lt IE 8]>
+		    <p class="browserupgrade">You're using an old navigator <strong>antigo</strong>. Please <a href="http://browsehappy.com/">update your navigator</a> to get a better experience.</p>
+		    <![endif]-->
+
+    <!-- Modals -->
+    <!-- Example -->
+    <example-modal></example-modal>
+
+    <!-- Navigation -->
+    <main-nav ng-if="showHeader"></main-nav>
+
+    <!-- Main view for templates -->
+    <div data-ng-view="" class="main-content"></div>
+    
+    <main-footer ng-if="showHeader"></main-footer>
+</body>
+
+<!-- Vendors -->
+<!-- build:nonangularlibs assets/js/nonangularlibs.js -->
+<script type="text/javascript" src="assets/js/nonangular/jquery-1.12.4.min.js"></script>
+<!-- endbuild -->
+
+<!-- Non-Angular Libraries -->
+<!-- build:libs assets/js/libs.js -->
+<script type="text/javascript" src="assets/js/nonangular/lodash.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<!-- endbuild -->
+
+<!-- External Angular Libraries -->
+<!-- build:angularlibs assets/js/angularlibs.js -->
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-sweetalert-2/SweetAlert.js"></script>
+<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script> 
+<script type="text/javascript" src="bower_components/angular-input-masks/angular-input-masks-standalone.min.js"></script>
+<script type="text/javascript" src="bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+<script type="text/javascript" src="bower_components/satellizer/dist/satellizer.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+<!-- endbuild -->
+
+<!-- Angular Components -->
+<!-- build:appcomponents assets/js/appcomponents.js -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/config.js"></script>
+<script type="text/javascript" src="app/components/shared/services/LocalStorage.service.js"></script>
+<script type="text/javascript" src="app/components/shared/services/queryService.service.js"></script>
+<script type="text/javascript" src="app/components/shared/services/loading.service.js"></script>
+<script type="text/javascript" src="app/components/shared/services/header.service.js"></script>
+<script type="text/javascript" src="app/components/shared/directives/main.nav.directive.js"></script>
+<script type="text/javascript" src="app/components/shared/directives/main.footer.directive.js"></script>
+<script type="text/javascript" src="app/components/shared/directives/side.nav.directive.js"></script>
+<script type="text/javascript" src="app/components/shared/directives/email.validate.directive.js"></script>
+<script type="text/javascript" src="app/components/shared/modals/example.modal.js"></script>
+<!-- endbuild -->
+
+<!-- Aplication Sessions -->
+<!-- build:mainapp assets/js/mainapp.js -->
+<script type="text/javascript" src="app/components/main/MainController.js"></script>
+<!-- endbuild -->
+
+<!-- templates from $templateCache -->
+<!-- build:templates -->
+<!-- endbuild -->
+
+<!-- Google Analytics -->
+<script>
+</script>
+
+</html>
