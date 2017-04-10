@@ -5,8 +5,14 @@ This project was made for personal purposes, it's entirelly(almost fully) based 
 *Hope you find it usefull as it is/was for me*
 
 ## To run the project:
-`npm install
- gulp`
+
+First run:
+
+`npm install`
+
+and then:
+
+ `gulp`
 
 ## To build for production
 `gulp build`
