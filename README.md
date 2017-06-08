@@ -24,7 +24,7 @@ To run the server inside ***_build*** folder to test if everything is ok:
 
 ## Packages included
 - Angular animate
-- Angualr input masks
+- Angular input masks
 - Angular sweetalert 2
 - Bootstrap SASS
 - Satellizer
